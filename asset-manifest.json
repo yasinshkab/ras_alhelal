@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ras_alhelal/static/css/main.f59c54c8.css",
+    "main.js": "/ras_alhelal/static/js/main.f48aba86.js",
+    "static/media/emerging-industries.gif": "/ras_alhelal/static/media/emerging-industries.2cd57cf5fca416f715c3.gif",
+    "static/media/calendar-animation.gif": "/ras_alhelal/static/media/calendar-animation.c20f279df0f0aadcbb43.gif",
+    "static/media/photo-build.jpg": "/ras_alhelal/static/media/photo-build.1a9c910d6db3afcd5e5a.jpg",
+    "static/media/ai-generated-graphic.png": "/ras_alhelal/static/media/ai-generated-graphic.acf8dbf1c3faf658fe56.png",
+    "static/media/building-animation.gif": "/ras_alhelal/static/media/building-animation.6dca57251479885200b6.gif",
+    "static/media/sadad-logo.png": "/ras_alhelal/static/media/sadad-logo.ec16cf9a3b059edf7c4e.png",
+    "static/media/ras.png": "/ras_alhelal/static/media/ras.5bed53f7dd6f8b1adab0.png",
+    "static/media/compliance-badge.png": "/ras_alhelal/static/media/compliance-badge.1a986017ba901243dd15.png",
+    "index.html": "/ras_alhelal/index.html",
+    "main.f59c54c8.css.map": "/ras_alhelal/static/css/main.f59c54c8.css.map",
+    "main.f48aba86.js.map": "/ras_alhelal/static/js/main.f48aba86.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f59c54c8.css",
+    "static/js/main.f48aba86.js"
+  ]
+}
