@@ -2,7 +2,7 @@
   "name": "ras-al-helal-exchange",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://yasinshkab.github.io/ras_alhelal/",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.1",
