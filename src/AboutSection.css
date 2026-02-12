@@ -1,0 +1,160 @@
+.about-section {
+    background-color: #ffffff;
+    font-family: 'Tajawal', 'Cairo', sans-serif;
+}
+
+/* Image Grid Styling */
+.about-image-grid {
+    height: 100%;
+}
+
+.tall-image {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tall-image img,
+.small-image img {
+    border-radius: 2rem;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.small-image {
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-card {
+    flex: 1;
+    min-height: 200px;
+    background-color: #003B49;
+    /* Deep Blue from theme */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    color: white;
+}
+
+.stats-card span {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stats-card p {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.75rem;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+/* Content Card */
+.about-content-card {
+    background-color: #F0F9FF;
+    /* Light blue tint */
+    border: 1px solid #E0F2FE;
+    border-radius: 2.5rem;
+}
+
+.about-content-card h2 {
+    font-family: 'Cairo', sans-serif;
+    color: #003B49;
+    letter-spacing: -0.01em;
+}
+
+.about-content-card .subtitle {
+    color: #F59E0B;
+    /* Gold from theme */
+}
+
+/* Vision/Mission Cards */
+.vision-mission-card {
+    background-color: #F0F9FF;
+    border: 1px solid #E0F2FE;
+    border-radius: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.vision-mission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 59, 73, 0.05);
+}
+
+.badge-label {
+    background-color: #ffffff;
+    color: #003B49;
+    border: 1px solid #E0F2FE;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Strategy/Large Card */
+.strategy-card {
+    border-radius: 2.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.strategy-card .overlay {
+    background: linear-gradient(rgba(0, 59, 73, 0.7), rgba(0, 59, 73, 0.85));
+}
+
+.strategy-card h3 {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Styling */
+.about-cta-btn {
+    background-color: #003B49;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 59, 73, 0.2);
+    transition: all 0.3s ease;
+}
+
+.about-cta-btn:hover {
+    background-color: #0EA5E9;
+    /* Switch to vivid blue on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(14, 165, 233, 0.3);
+}
+
+/* RTL Support */
+[dir="rtl"] .about-content-card {
+    text-align: right;
+}
+
+[dir="rtl"] .about-content-card .grid {
+    text-align: right;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .tall-image {
+        height: 450px;
+    }
+}
+
+@media (max-width: 640px) {
+    .about-image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tall-image {
+        height: 350px;
+    }
+
+    .small-image {
+        height: 250px;
+    }
+
+    .stats-card {
+        height: 180px;
+    }
+}

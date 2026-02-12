@@ -1,0 +1,47 @@
+{
+  "name": "ras-al-helal-exchange",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "lucide-react": "^0.263.1",
+    "node-fetch": "^3.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "server": "node server.js",
+    "dev": "concurrently \"npm start\" \"npm run server\"",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "check-port": "netstat -ano | findstr :3000",
+    "compress-images": "node scripts/images.js compress",
+    "replace-images": "node scripts/images.js replace",
+    "delete-backup": "rmdir /s /q src\\assets-backup",
+    "remove-unused-images": "node scripts/images.js prune-unused",
+    "organize-images": "node scripts/images.js organize",
+    "update-usd": "echo \"Removed: using external API (no local USD fetch script).\""
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "gh-pages": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "sharp": "^0.33.5"
+  }
+}
