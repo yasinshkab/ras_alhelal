@@ -147,12 +147,12 @@ const imageMapping = {
   "bank-central-of-libya-logo-png_seeklogo-563651.png": "logos/central-bank-libya.png",
 
   // Services Section
-  "contactless-payment-illustration-svg-download-png-13207596.png": "services/contactless-payment.png",
-  "Untitled_design-removebg-preview.png": "services/financial-solutions.png",
+  "currency-exchange.png": "services/currency-exchange.png",
+  "global-remittances.jpg": "services/global-remittances.jpg",
+  "corporate-liquidity.png": "services/corporate-liquidity.png",
+  "digital-ecosystem.png": "services/digital-ecosystem.png",
   "legalcomplaiance.png": "services/legal-compliance.png",
   "theplanet.png": "services/global-transfers.png",
-  "companies.png": "services/business-services.png",
-  "moneyexchange.png": "services/currency-exchange.png",
 
   // Payment Methods
   "Sadad.almadar.png": "payment-methods/sadad-logo.png",
@@ -310,7 +310,7 @@ function pruneUnused({ dryRun }) {
 }
 
 async function favicon() {
-  const src = path.join(repoRoot, "src", "assets", "general", "compliance-graphic.png");
+  const src = path.join(repoRoot, "src", "assets", "logos", "ras.png");
   const publicDir = path.join(repoRoot, "public");
   if (!fs.existsSync(src)) {
     console.error(`Logo not found: ${src}`);

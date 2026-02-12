@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Globe } from 'lucide-react';
 import rasLogo from './assets/logos/ras.png';
 
-const AlNakhlaHeader = ({ isArabic, setIsArabic }) => {
+const Header = ({ isArabic, setIsArabic }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -133,4 +133,4 @@ const AlNakhlaHeader = ({ isArabic, setIsArabic }) => {
   );
 };
 
-export default AlNakhlaHeader;
+export default Header;

@@ -1,6 +1,6 @@
-# Project Context: Al Nakhla Exchange
+# Project Context: Ras Al Helal Exchange
 
-This repository contains a single-page React website for **Al Nakhla Exchange** (currency exchange / financial services). The UI is designed to support **Arabic (RTL)** and **English (LTR)** and includes sections like services, compliance, branch locator, contact, and a live USD rate display.
+This repository contains a single-page React website for **Ras Al Helal Exchange** (currency exchange / financial services). The UI is designed to support **Arabic (RTL)** and **English (LTR)** and includes sections like services, compliance, branch locator, contact, and a live USD rate display.
 
 ## Tech stack
 
@@ -43,7 +43,7 @@ npm run dev
 
 `src/App.js` composes these section components:
 
-- `src/AlNakhlaHeader.js`: top navigation / language toggle
+- `src/Header.js`: top navigation / language toggle
 - `src/HeroSectionV2.js`: hero area; includes the USD rate widget
 - `src/UsdRateDisplay.js`: fetches/displays USD rate (used by `HeroSectionV2`)
 - `src/WhyChooseUsSection.js`: “why choose us” content

@@ -1,9 +1,8 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import emergingGif from './assets/animations/emerging-industries.gif';
-import calendarGif from './assets/animations/calendar-animation.gif';
-import buildingGif from './assets/animations/building-animation.gif';
-import aiGraphic from './assets/animations/ai-generated-graphic.png';
+import exchangeImg from './assets/services/currency-exchange.png';
+import remittancesImg from './assets/services/global-remittances.jpg';
+import digitalImg from './assets/services/digital-ecosystem.png';
 
 const ServicesSection = ({ isArabic }) => {
   const text = {
@@ -16,26 +15,20 @@ const ServicesSection = ({ isArabic }) => {
         {
           title: "Currency Exchange",
           description: "Real-time global currency trading with competitive spreads and unparalleled execution speed.",
-          media: emergingGif,
+          media: exchangeImg,
           color: "#0EA5E9"
         },
         {
           title: "Global Remittances",
           description: "Schedule and track your international transfers with precision through our secure network.",
-          media: calendarGif,
-          color: "#F59E0B"
-        },
-        {
-          title: "Corporate Liquidity",
-          description: "Bespoke cash management and institutional support for growing businesses in Libya.",
-          media: buildingGif,
-          color: "#10B981"
+          media: remittancesImg,
+          color: "#0EA5E9"
         },
         {
           title: "Digital Ecosystem",
           description: "Innovation-driven financial tools designed for the next generation of global connectivity.",
-          media: aiGraphic,
-          color: "#6366F1"
+          media: digitalImg,
+          color: "#0EA5E9"
         }
       ]
     },
@@ -47,27 +40,21 @@ const ServicesSection = ({ isArabic }) => {
       services: [
         {
           title: "صرف العملات",
-          description: "تداول العملات العالمية في الوقت الفعلي مع فوارق تنافسية وسرعة تنفيذ لا مثيل لها.",
-          media: emergingGif,
+          description: "تداول العملات العالمية في الوقت الفعلي مع فوارق تنافسية وسرعة تنفيذ لا ميل لها.",
+          media: exchangeImg,
           color: "#0EA5E9"
         },
         {
           title: "الحوالات العالمية",
           description: "جدولة وتتبع حوالاتك الدولية بدقة من خلال شبكتنا العالمية الآمنة.",
-          media: calendarGif,
-          color: "#F59E0B"
-        },
-        {
-          title: "السيولة المؤسسية",
-          description: "إدارة نقدية مخصصة ودعم مؤسسي للشركات المتنامية في السوق الليبي.",
-          media: buildingGif,
-          color: "#10B981"
+          media: remittancesImg,
+          color: "#0EA5E9"
         },
         {
           title: "المنظومة الرقمية",
           description: "أدوات مالية مبتكرة مصممة للجيل القادم من التواصل والترابط العالمي.",
-          media: aiGraphic,
-          color: "#6366F1"
+          media: digitalImg,
+          color: "#0EA5E9"
         }
       ]
     },
@@ -79,6 +66,9 @@ const ServicesSection = ({ isArabic }) => {
   return (
     <section id="services" className="py-24 bg-gray-50/50 relative overflow-hidden">
       <div className="container mx-auto px-4 max-w-7xl relative z-10">
+        {/* Subtle Background Accents */}
+        <div className="absolute -top-24 -left-24 w-96 h-96 bg-[#0EA5E9]/5 rounded-full blur-[100px] -z-10 animate-pulse"></div>
+        <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-[#F59E0B]/5 rounded-full blur-[100px] -z-10 animate-pulse" style={{ animationDelay: '2s' }}></div>
 
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20 px-4">
@@ -93,48 +83,51 @@ const ServicesSection = ({ isArabic }) => {
           </p>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Services Grid - 3 columns for one line layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {content.services.map((service, index) => {
             return (
               <div
                 key={index}
-                className="group relative bg-white rounded-[32px] overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-500 transform hover:-translate-y-2"
+                className="group relative bg-white rounded-[40px] overflow-hidden shadow-2xl shadow-gray-200/50 transition-all duration-700 transform hover:-translate-y-3"
               >
-                {/* Media Container */}
-                <div className="relative h-48 overflow-hidden bg-gray-50">
+                {/* Seamless Media Area */}
+                <div className="relative h-80 w-full overflow-hidden bg-white flex items-center justify-center p-10">
                   <img
                     src={service.media}
                     alt={service.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-contain transition-transform duration-1000 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                  {/* Floating badge effect */}
+                  {/* Subtle Accent Light */}
                   <div
-                    className={`absolute bottom-4 ${isArabic ? 'right-4' : 'left-4'} w-2 h-8 rounded-full`}
+                    className="absolute inset-0 opacity-0 group-hover:opacity-[0.03] transition-opacity duration-1000"
                     style={{ backgroundColor: service.color }}
                   ></div>
                 </div>
 
-                {/* Content Area */}
-                <div className="p-8">
-                  <h3 className="text-xl font-bold text-[#003B49] mb-3 leading-tight group-hover:text-[#0EA5E9] transition-colors">
+                {/* Content Area - Minimalist & Large */}
+                <div className="px-12 pb-14 text-center">
+                  <div
+                    className="w-16 h-1 bg-gray-100 mx-auto mb-8 rounded-full transition-all duration-500 group-hover:w-24"
+                    style={{ backgroundColor: `${service.color}40` }}
+                  ></div>
+
+                  <h3 className="text-3xl font-black text-[#003B49] mb-5 leading-tight tracking-tight">
                     {service.title}
                   </h3>
-                  <p className="text-gray-500 leading-relaxed mb-8 font-medium text-sm line-clamp-3">
+                  <p className="text-gray-500 leading-relaxed mb-10 text-lg font-medium">
                     {service.description}
                   </p>
 
-                  <div className="flex items-center gap-2 mt-auto">
-                    <span
-                      className={`text-sm font-bold tracking-wide transition-colors ${index === 0 ? 'text-[#0EA5E9]' : 'text-gray-400 group-hover:text-[#0EA5E9]'}`}
+                  <div className="flex justify-center">
+                    <button
+                      className="flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-white transition-all duration-500 shadow-lg hover:shadow-xl transform hover:scale-105"
+                      style={{ backgroundColor: service.color }}
                     >
                       {content.cta}
-                    </span>
-                    <ArrowRight
-                      className={`w-4 h-4 transition-all duration-300 ${isArabic ? 'rotate-180 group-hover:-translate-x-1' : 'group-hover:translate-x-1'} ${index === 0 ? 'text-[#0EA5E9]' : 'text-gray-400 group-hover:text-[#0EA5E9]'}`}
-                    />
+                      <ArrowRight className={`w-5 h-5 transition-transform duration-300 ${isArabic ? 'rotate-180 group-hover:-translate-x-2' : 'group-hover:translate-x-2'}`} />
+                    </button>
                   </div>
                 </div>
               </div>

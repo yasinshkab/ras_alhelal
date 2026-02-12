@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import AlNakhlaHeader from './AlNakhlaHeader';
+import Header from './Header';
 import HeroSectionV2 from './HeroSectionV2';
 import CurrencyTicker from './CurrencyTicker';
 import WhyChooseUsSection from './WhyChooseUsSection';
@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <AlNakhlaHeader isArabic={isArabic} setIsArabic={setIsArabic} />
+      <Header isArabic={isArabic} setIsArabic={setIsArabic} />
       <HeroSectionV2 isArabic={isArabic} />
       <ServicesSection isArabic={isArabic} />
       <StatisticsSection isArabic={isArabic} />

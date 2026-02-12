@@ -36,14 +36,14 @@ const BranchLocatorSection = ({ isArabic }) => {
         name: "Exchange Office",
         address: "Al Ma'mun Street, Tripoli, Libya",
         phone: ["0917883311", "0916883311"],
-        email: "info@alnakhlaxc.ly",
+        email: "info@rasalhelal.com",
         mapUrl: "https://maps.app.goo.gl/cKd1oByZK6hYF5aV6"
       },
       {
         name: "Management Office",
         address: "3rd Floor, Office 8, Ben Ashour, Tripoli, Libya",
         phone: ["0917883311", "0916883311"],
-        email: "info@alnakhlaxc.ly",
+        email: "info@rasalhelal.com",
         mapUrl: "https://maps.app.goo.gl/5FkYHiJ1AW7xcNiG9"
       }
     ],
@@ -52,14 +52,14 @@ const BranchLocatorSection = ({ isArabic }) => {
         name: "مكتب الصرافة",
         address: "شارع المأمون، طرابلس، ليبيا",
         phone: ["0917883311", "0916883311"],
-        email: "info@alnakhlaxc.ly",
+        email: "info@rasalhelal.com",
         mapUrl: "https://maps.app.goo.gl/cKd1oByZK6hYF5aV6"
       },
       {
         name: "مكتب الإدارة",
         address: "بن عاشور، الدور 3 شقة رقم 8، طرابلس، ليبيا",
         phone: ["0917883311", "0916883311"],
-        email: "info@alnakhlaxc.ly",
+        email: "info@rasalhelal.com",
         mapUrl: "https://maps.app.goo.gl/5FkYHiJ1AW7xcNiG9"
       }
     ]
