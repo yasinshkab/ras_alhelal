@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/ras_alhelal/static/css/main.f59c54c8.css",
-    "main.js": "/ras_alhelal/static/js/main.73087fff.js",
+    "main.css": "/ras_alhelal/static/css/main.b3ea0a1c.css",
+    "main.js": "/ras_alhelal/static/js/main.8086f47f.js",
     "static/media/global-remittances.jpg": "/ras_alhelal/static/media/global-remittances.2fb653c97b5aad539af1.jpg",
     "static/media/photo-build.jpg": "/ras_alhelal/static/media/photo-build.1a9c910d6db3afcd5e5a.jpg",
     "static/media/digital-ecosystem.png": "/ras_alhelal/static/media/digital-ecosystem.68c1dce82301468093ef.png",
     "static/media/currency-exchange.png": "/ras_alhelal/static/media/currency-exchange.1eb5f80ee6587169d48a.png",
+    "static/media/Gemini_Generated_Image_tri1gctri1gctri1-Photoroom.png": "/ras_alhelal/static/media/Gemini_Generated_Image_tri1gctri1gctri1-Photoroom.26e5eaee9233542038cb.png",
     "static/media/sadad-logo.png": "/ras_alhelal/static/media/sadad-logo.ec16cf9a3b059edf7c4e.png",
-    "static/media/ras.png": "/ras_alhelal/static/media/ras.5bed53f7dd6f8b1adab0.png",
+    "static/media/460110416___n-removebg-preview.png": "/ras_alhelal/static/media/460110416_122093277446544541_4227441010665014249_n-removebg-preview.3277c77c84f9f2c11238.png",
+    "static/media/rasalhila.png": "/ras_alhelal/static/media/rasalhila.2f491a56ad1b6e00b0a1.png",
     "static/media/compliance-badge.png": "/ras_alhelal/static/media/compliance-badge.1a986017ba901243dd15.png",
     "index.html": "/ras_alhelal/index.html",
-    "main.f59c54c8.css.map": "/ras_alhelal/static/css/main.f59c54c8.css.map",
-    "main.73087fff.js.map": "/ras_alhelal/static/js/main.73087fff.js.map"
+    "main.b3ea0a1c.css.map": "/ras_alhelal/static/css/main.b3ea0a1c.css.map",
+    "main.8086f47f.js.map": "/ras_alhelal/static/js/main.8086f47f.js.map"
   },
   "entrypoints": [
-    "static/css/main.f59c54c8.css",
-    "static/js/main.73087fff.js"
+    "static/css/main.b3ea0a1c.css",
+    "static/js/main.8086f47f.js"
   ]
 }
